@@ -32,4 +32,5 @@ Before running the cron job, make sure to configure the cron scheduling accordin
 
 ## Usage
 
-After following the installation and configuration steps, the cron job will be executed automatically according to the specified scheduling. The execution results of the cron job will be displayed in the execution log on the Actions tab in this GitHub repository.
+After following the installation and configuration steps, the cron job will be executed automatically according to the specified scheduling. The execution results of the cron job will be displayed in the execution log on the Actions tab in this GitHub repository. If you want to test go on 
+`run node cron.js` command in terminal to start server.
