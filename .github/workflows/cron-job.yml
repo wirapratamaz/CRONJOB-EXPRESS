@@ -2,7 +2,7 @@ name: Cron Job
 
 on:
   schedule:
-    - cron: '0 12 * * *' # Manage schedule cron with requirement
+    - cron: '40 12 * * *' # Manage schedule cron with requirement
 
 jobs:
   run:
