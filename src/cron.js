@@ -21,9 +21,10 @@ function sendEmail(){
     console.log('Sending email to new user');
 }
 
-cron.schedule('* 58 * * * *', () => { //menit 58
+cron.schedule('*/15 * * * *', () => { //setiap 15 menit
     sendEmail();
 });
+  
 
 app.use((req, res, next) => {
     console.log('Request received');
