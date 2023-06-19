@@ -6,10 +6,10 @@ const fs = require('fs');
 const path = require('path');
 
 //*first
-cron.schedule('* 41 * * * *', () => { //menit 41
+// cron.schedule('* 41 * * * *', () => { //menit 41
     //code execution on schedule
-    console.log('Cron job is running every second');
-})
+//     console.log('Cron job is running every second');
+// })
 
 //*second using range
 cron.schedule('1-5 * * * * *', () => { //detik 1-5
