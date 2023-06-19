@@ -1,0 +1,24 @@
+name: Cron Job
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # Manage schedule cron with requirement
+
+jobs:
+  run:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run cron job
+        run: node src/cron.js
